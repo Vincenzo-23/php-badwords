@@ -12,7 +12,7 @@
             <input type="text" name="paragraph" id="paragraph" placeholder="Scrivi una frase">
         </p>
         <p>
-            <label for="word">Parola</label>
+            <label for="word">Parola da censurare</label>
             <input type="text" name="word" id="word" placeholder="Scrivi una parola">
         </p>
         <button>Invia</button>
