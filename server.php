@@ -2,7 +2,7 @@
 $paragraph = $_POST["paragraph"];
 $paragraph_length = strlen($paragraph);
 $badword = $_POST["word"];
-$censored_paragraph = str_replace($badword, "***", $paragraph);
+$censored_paragraph = str_replace($badword, "***", $paragraph, $count);
 $censored_paragraph_length = strlen($censored_paragraph);
 ?>
 
@@ -26,6 +26,9 @@ $censored_paragraph_length = strlen($censored_paragraph);
         </div>
         <div>
             Lunghezza paragrafo censurato: <?php echo $censored_paragraph_length; ?>
+        </div>
+        <div>
+            Numero di censure effettuate: <?php echo $count; ?>
         </div>
     </div>
 
